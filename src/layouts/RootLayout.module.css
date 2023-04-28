@@ -1,0 +1,26 @@
+.main {
+    padding: 0 0 2rem 0;
+    width: min(100% - 2rem, 60rem);
+    margin-inline: auto;
+}
+
+.main p {
+    max-width: 62ch;
+}
+
+.header {
+    width: min(100% - 2rem, 60rem);
+    margin-inline: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 1rem;
+}
+

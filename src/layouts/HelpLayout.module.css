@@ -1,0 +1,8 @@
+.layout {
+    background-color: rgba(205, 138, 102, 0.16);
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
