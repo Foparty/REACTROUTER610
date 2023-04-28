@@ -17,6 +17,6 @@ export default CareerDetails;
 
 export const careerDetailsLoader = async ({ params }) => {
     const { id } = params;
-    const res = await fetch('https://foparty.github.io/' + id);
+    const res = await fetch('https://foparty.github.io/data/' + id);
     return res.json();
 };
