@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './CareerDetails.module.css';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { careers } from '../../../public/data/data.js';
 
 const CareerDetails = () => {
     const { id } = useParams();
@@ -15,8 +16,8 @@ export default CareerDetails;
 
 //loader function
 
-export const careerDetailsLoader = async ({ params }) => {
+export const careerDetailsLoader = ({ params }) => {
     const { id } = params;
-    const res = await fetch('https://foparty.github.io/data/' + id);
-    return res.json();
+    const res = `${careers}` + id;
+    return res;
 };
