@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Careers.module.css';
 import { useLoaderData, Link } from 'react-router-dom';
+import { careers } from '../../../public/data/data.js';
 
 const Careers = () => {
     const career = useLoaderData();
@@ -17,8 +18,8 @@ const Careers = () => {
 };
 export default Careers;
 
-export const careersLoader = async () => {
-    const response = await fetch('data.json');
+export const careersLoader = () => {
+    const response = careers;
 
-    return response.json();
+    return response;
 };
