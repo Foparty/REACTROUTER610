@@ -18,7 +18,9 @@ const Careers = () => {
 export default Careers;
 
 export const careersLoader = async () => {
-    const response = await fetch('/data/careers');
+    const response = await fetch(
+        'https://reactrouter-test.netlify.app/data/careers'
+    );
 
     return response.json();
 };

@@ -17,6 +17,8 @@ export default CareerDetails;
 
 export const careerDetailsLoader = async ({ params }) => {
     const { id } = params;
-    const res = await fetch('/data/careers/' + id);
+    const res = await fetch(
+        'https://reactrouter-test.netlify.app/data/careers/' + id
+    );
     return res.json();
 };
