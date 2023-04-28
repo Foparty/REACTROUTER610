@@ -18,7 +18,7 @@ const Careers = () => {
 export default Careers;
 
 export const careersLoader = async () => {
-    const response = await fetch('https://foparty.github.io/data');
+    const response = await fetch('data.json');
 
     return response.json();
 };
