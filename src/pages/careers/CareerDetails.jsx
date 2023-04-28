@@ -18,6 +18,6 @@ export default CareerDetails;
 
 export const careerDetailsLoader = ({ params }) => {
     const { id } = params;
-    const res = `${careers}` + id;
+    const res = `${careers}/` + id;
     return res;
 };
