@@ -19,7 +19,7 @@ export default Careers;
 
 export const careersLoader = async () => {
     const response = await fetch(
-        'https://reactrouter-test.netlify.app/data/data/careers'
+        'https://reactrouter-test.netlify.app/data/data.json/careers'
     );
 
     return response.json();
