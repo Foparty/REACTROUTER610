@@ -18,9 +18,7 @@ const Careers = () => {
 export default Careers;
 
 export const careersLoader = async () => {
-    const response = await fetch(
-        'https://reactrouter-test.netlify.app/data/data.json/'
-    );
+    const response = await fetch('https://foparty.github.io/data.json');
 
     return response.json();
 };
