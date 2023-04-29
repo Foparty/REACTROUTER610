@@ -22,5 +22,5 @@ export const careersLoader = async () => {
     'https://reactrouter-test.netlify.app/data/data.json'
   );
 
-  return res.json();
+  return res.careers.json();
 };
