@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Careers.module.css';
 import { useLoaderData, Link } from 'react-router-dom';
-import { careers } from '../../../public/data/data.js';
 
 const Careers = () => {
   const career = useLoaderData();
@@ -19,7 +18,7 @@ const Careers = () => {
 export default Careers;
 
 export const careersLoader = async () => {
-  const res = await fetch('https://foparty.github.io/data/careers');
+  const res = await fetch('https://foparty.github.io/data/data.json');
 
   return res.json();
 };
