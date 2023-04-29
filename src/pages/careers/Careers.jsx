@@ -4,6 +4,7 @@ import { useLoaderData, Link } from 'react-router-dom';
 
 const Careers = () => {
   const career = useLoaderData();
+  console.log(career);
   return (
     <div className={styles.careers}>
       {career.map((item) => (
